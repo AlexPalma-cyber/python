@@ -1,18 +1,33 @@
-texto = "Curso de Programacion en Python"
-print(texto)
+alumnos = ["Moises", "Camila", "Fernanda","Pablo", "Tania", "David", "Marcos"]
+def promedio_calificaciones1():
+    valores = [2,5,8,4,0,1,6,7]
+    while True:
+        valor = int(input("calificacion: "))
+        if valor == 0:
+            break
+        else:
+            valores.append(valor)
 
-numero_entero = 2023
-print(numero_entero)
+    #promedio
+    sumatoria = 0
+    for x in range(len(valores)):
+        sumatoria += valores[x]
+    average = sumatoria/ len(valores)
+    print("Tu promedio es de: ", average)
+    print(valores)
 
-edad = 27
+def promedio_calificaciones2():
+    valores = [2,5,8,4,0,1,6,7]
+    valor = 99
+    while True:
+        valor = int(input("calificacion: "))
+        if valor == 0:
+            break
+        elif (valor >= 1 and valor <= 5):
+            valores.append(valor)
+    average = valores/ len(valores)
+    print("Tu promedio es de: ", average)
+    print(valores)
 
-print("edad es un tipo de dato ", type(edad))
-
-acceso = False
-print("Acceso es igual a ", acceso)
-
-nombre, apellido, edad = "Alexander", "Palma", 27
-print("Hola, soy: ", nombre, apellido, ". Tengo: ", edad, "años")
-
-nombre = input('¿Cual es tu nombre? ')
-edad = input('¿Cuantos años tienes? ')
+promedio_calificaciones1()
+promedio_calificaciones2()
