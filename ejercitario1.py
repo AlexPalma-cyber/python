@@ -1,3 +1,13 @@
-x= int(input("ingrese un el primer numero"))
-y= int(input("ingrese un el segundo numero"))
-print("La suma de los numeros es:" , x / y )
+import os
+import time
+import sys
+import datetime
+import math
+os.system("cls")
+print("Abrir la calculadora")
+time.sleep(5)
+os.system("calc")
+print(sys.path)
+print(datetime.date.today())
+help(math)
+
