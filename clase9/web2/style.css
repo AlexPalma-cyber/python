@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    background-color: rgb(20, 219, 153);
+    color: rgb(10, 1, 138);;
+}
+.estilo-parrafo{
+     font-family: Verdana,  sans-serif;
+     font-weight: bold;
+     font-style: italic;
+     color: rgb(47, 138, 11);
+     border: 24px;
+}
+.logo{
+    width: 500px;
+    height: 200px;
+}
+.producto{
+    width: 200px;
+    height: 200px;
+}

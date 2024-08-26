@@ -1,0 +1,21 @@
+body{
+    font-family: sans-serif;
+}
+h1{
+    background-color: aquamarine;
+    color: rgb(170, 34, 34);;
+}
+.estilo-parrafo{
+     font-family: Verdana,  sans-serif;
+     font-weight: bold;
+     font-style: italic;
+     color: rgb(47, 138, 11);
+     border: 24px;
+}
+.boton{ background-color: rgb(56, 25, 168);
+    color: rgb(36, 184, 85);;
+}
+.logo{
+    width: 500px;
+    height: 400px;
+}
