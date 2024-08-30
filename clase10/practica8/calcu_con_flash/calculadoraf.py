@@ -13,8 +13,10 @@ def calcular():
         numero2 = float(request.form["num2"])
         operacion = request.form['op']
 
-        if operacion == "+":
+        if operacion == "s":
             resultado = numero1 + numero2
+        elif operacion == "r":
+            resultado = numero1 - numero2
         #implementar para resta, division y multiplicacion
         return render_template("index.html", result=resultado)
     elif request.method == "GET":

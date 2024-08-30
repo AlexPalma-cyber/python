@@ -5,7 +5,7 @@ def ordenar(ls, ord): #ordenar el vector original no una copia??
    if(ord=="ASC"):
       for x in range(len(ls)-1):
          for y in range(len(ls)-1):
-            if(ls[y] > ls[y+1]):
+            if(ls[y]>ls[y+1]):
                aux= ls[y]
                ls[y]=[y+1]
                ls[y+1]=aux
