@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(130, 184, 77);
+} 
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+h3{
+    font-family: Arialf;
+    font-size: 28pt;
+    color: blue;
+}
+
+.form-control{
+    width: 110pt;
+    height: 20pt;
+    background-color: rgb(177, 213, 236);
+}
+
+button{
+    width: 80pt;
+    height: 20pt;
+    background-color: rgb(219, 139, 86);
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 80pt;
+    height: 20pt;
+    background-color: rgb(190, 180, 34);
+    border: tomato;
+}
