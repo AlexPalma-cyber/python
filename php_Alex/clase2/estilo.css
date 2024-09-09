@@ -1,0 +1,30 @@
+
+
+   body{
+background-color: azure;
+font-family: sans-serif;        
+     } 
+.container{
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+}
+h1{
+    font-size: 20pt;
+    color: aqua;
+    background-color: blue;
+}     
+p{
+    font-size: 18pt;
+}
+input, button{
+    padding: 5px;
+}
+.img_producto{
+    height: 200px;
+    width: 200px;
+    transition: 300ms;
+}
+.img_producto:hover{
+    transform: scale(1.5);
+}
