@@ -1,12 +1,19 @@
-<title>Resultado</title>
-<body>
-    <input type="text" id="numero1"placeholder="Numero1">
-    <input type="text" id="numero2"placeholder="Numero2">
-    <input type="text" id="resultado"placeholder="Resultado">
-    <br>
-    <button id="sumar">+</button>
-    <button id="restar">-</button>
-    <button class="operador">/</button>
-    <button class="operador">*</button>
-    <button class="operador">X<sup>y</sup></button>
-</body>
+
+
+<input name="n1" id="n1">
+<input name="n2" id="n2">
+<input name="r" id="r">
+
+<button id="sumar">
+    Sumar</button>
+<button id="restar">
+    Restar</button>
+<button id="multiplicar">
+    multiplicar</button>
+<button id="dividir">
+    Dividir</button>
+<button id="elevar">
+    Elevar</button>   
+<script src="scripts.js">
+
+</script>    
