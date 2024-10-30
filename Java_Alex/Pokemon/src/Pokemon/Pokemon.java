@@ -1,13 +1,11 @@
 package Pokemon;
 
-import java.util.Random;
-
 public class Pokemon {
-    String tipo;
+    Tipo tipo;
     String nombre;
-    int nivel;
-    int poder_ataque;
-    int poder_defensa;
+    int nivelvida;
+    int poderDaño;
+    int poderDefensa;
     int velocidad;
 
     public Pokemon() {}
@@ -15,24 +13,31 @@ public class Pokemon {
     public Pokemon(Tipo t, String n, int nv, int pda, int pde, int v) {
         this.tipo = t;
         this.nombre = n;
-        this.nivel = nv;
-        this.poder_ataque = pda;
-        this.poder_defensa = pde;
+        this.nivelvida = nv;
+        this.poderDaño = pda;
+        this.poderDefensa = pde;
         this.velocidad = v;
     }
 
     public int atacar() {
-        return 0;
+        int valor = (int) (Math.random() * 100 % 10) + 1;
+        return valor;
     }
 
     public boolean esquivar() {
-        return true;
+        int valor = (int) (Math.random() * 100 % 2);
+        if (valor == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public void set_vida(int v) {
+    public void setVida(int v) {
+        this.nivelvida = v;
     }
 
-    public int get_vida() {
-        return 0;
+    public int getVida() {
+        return this.nivelvida;
     }
 }
