@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class claseLogin {
@@ -22,28 +24,38 @@ public class claseLogin {
 	        login.add(titulo);
 	        JLabel lUsuario  = new JLabel("Usuario: ");
 	        JTextField TUsuario  = new JTextField(10); 
-	
+	        
+	        JLabel lPass = new JLabel ("Contraseña: ");
+	        JPasswordField tPass = new JPasswordField(10);
+	        
 	        JButton bacceder  = new JButton("Acceder");
 	        bacceder.addActionListener(new ActionListener() {
 	        	@Override //sobreescrito...abstracta
 	        	public void actionPerformed(ActionEvent e) {
-	        		validarDatos();
+	        		String user = TUsuario.getText();
+	        		String pass = String.valueOf(tPass.getPassword());
+	        		validarDatos(user, pass);
 	        	}
 	        });
 	        	
 	        
 	        login.add(lUsuario);
 	        login.add(TUsuario);
+	        login.add(lPass);
+	        login.add(tPass);
 	        login.add(bacceder);
 	        login.setVisible(true);
 		}
     
-    protected void validarDatos() {
-			// TODO Auto-generated method stub
+    protected void validarDatos(String user, String pass) {
+			String mensaje = "Usuario: " + user + "\nContraseña: " + pass;
+			JOptionPane.showMessageDialog(login, mensaje);
 			
 		}
 
 	public static void main(String[] args){
         new claseLogin();
+       
+		
     }
 }
