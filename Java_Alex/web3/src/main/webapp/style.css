@@ -1,0 +1,22 @@
+@charset "UTF-8";
+h1{
+	font-family: Arial, sans-serif;
+	font-size: 24pt;
+	background-color: cadetblue;
+	
+}
+
+.subtitulo{
+	font-size: 18pt;
+	color: rgb(0, 128, 128);
+}
+
+button{
+	background-color: rgb(128, 255, 128);
+	border-radius: 10px, 0px, 10px, 0px;
+	transition: 200ms;
+}
+
+button:hover{
+	background-color: blue;
+}
