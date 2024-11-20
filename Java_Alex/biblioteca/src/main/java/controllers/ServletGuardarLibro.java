@@ -6,11 +6,12 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 
 /**
  * Servlet implementation class ServletGuardarLibro
  */
-@WebServlet("/ServletGuardarLibro")
+@WebServlet("/GuardarLibro")
 public class ServletGuardarLibro extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -35,10 +36,10 @@ public class ServletGuardarLibro extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		guardarLibro(request, response);
+		GuardarLibro(request, response);
 	}
 
-	private void guardarLibro(HttpServletRequest rq, HttpServletResponse rs) {
+	private void GuardarLibro(HttpServletRequest rq, HttpServletResponse rs) throws ClassNotFoundException, SQLException {
 		int codigo = Integer.valueOf(rq.getParameter("code"));
 		String autor =rq.getParameter("Autor");
         String titulo =rq.getParameter("titulo");
